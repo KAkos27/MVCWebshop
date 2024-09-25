@@ -25,7 +25,7 @@ export default class Kosar {
     } else {
       this.#szuloElem.html(`<div
         class="ures-kosar d-flex justify-content-center align-items-center position-fixed top-50 flex-column"
-        style="right: 20%"
+        style="right: 17%"
       >
         <h2>A kosár üres!</h2>
         <div>
