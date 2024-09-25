@@ -14,14 +14,7 @@ export default class Tartalom {
   tartalomGeneral() {
     this.#szuloElem.empty();
     for (let index = 0; index < this.#TERMEKEK.length; index++) {
-      new Kartya(
-        this.#szuloElem,
-        this.#TERMEKEK[index].id,
-        this.#TERMEKEK[index].title,
-        this.#TERMEKEK[index].description,
-        this.#TERMEKEK[index].price,
-        this.#TERMEKEK[index].image
-      );
+      new Kartya(this.#szuloElem, this.#TERMEKEK[index]);
     }
   }
 }

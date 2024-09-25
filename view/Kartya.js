@@ -6,14 +6,13 @@ class Kartya {
   #ar;
   #kep;
 
-  constructor(szuloElem, id, cim, leiras, ar, kep) {
-    console.log(kep);
+  constructor(szuloElem, { id, title, description, price, image }) {
     this.#szuloElem = szuloElem;
     this.#id = id;
-    this.#cim = cim;
-    this.#leiras = leiras;
-    this.#ar = ar;
-    this.#kep = kep;
+    this.#cim = title;
+    this.#leiras = description;
+    this.#ar = price;
+    this.#kep = image;
     this.kartyaMegjelenit();
     this.GOMB = $(".kosar-gomb:last");
     this.esemenyKezelo();
