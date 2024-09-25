@@ -20,10 +20,10 @@ class Kartya {
 
   kartyaMegjelenit = () => {
     const html = `
-    <div class="col-xl-4 col-lg-6 d-flex justify-content-center p-3">
-    <div class="card col-3" style="width: 390px; height: fit-content">
+    <div class="col-lg-12 col-xl-6 d-flex justify-content-center p-3">
+    <div class="card col-3" style="width:330px">
         <img class="card-img-top" src="${this.#kep.src}" alt="${this.#kep.alt}">
-        <div class="card-body">
+        <div class="card-body d-flex justify-content-between" style="flex-direction:column">
             <h4 class="card-title">${this.#cim}</h4>
             <p class="card-text">${this.#leiras}</p>
             <div class="pt-3">
