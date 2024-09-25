@@ -1,1 +1,1 @@
-export const LISTA = [];
+export const KOSAR_LISTA = [];

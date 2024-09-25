@@ -8,7 +8,6 @@ export default class Tartalom {
     this.#szuloElem = szuloElem;
     this.#TERMEKEK = TERMEKEK;
     this.tartalomGeneral();
-    console.log(this.#TERMEKEK);
   }
 
   tartalomGeneral() {
