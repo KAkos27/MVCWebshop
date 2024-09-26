@@ -2,34 +2,40 @@ import { TOYS } from "./data.js";
 import { KOSAR_LISTA } from "./kosarLista.js";
 
 class Model {
-  constructor() {}
+  #JATEKOK;
+  #KOSAR;
+
+  constructor() {
+    this.#JATEKOK = TOYS;
+    this.#KOSAR = KOSAR_LISTA;
+  }
 
   kosarhozAd = (id) => {
-    const targy = TOYS.find((toy) => toy.id === id);
+    const targy = this.#JATEKOK.find((toy) => toy.id === id);
 
-    if (!KOSAR_LISTA.includes(targy)) {
+    if (!this.#KOSAR.includes(targy)) {
       targy.amount = 1;
-      KOSAR_LISTA.push(targy);
+      this.#KOSAR.push(targy);
     } else {
-      const index = KOSAR_LISTA.findIndex((toy) => toy.id === id);
-      KOSAR_LISTA[index].amount++;
+      const index = this.#KOSAR.findIndex((toy) => toy.id === id);
+      this.#KOSAR[index].amount++;
     }
   };
 
   kosarbolTorol = (id) => {
-    const ujKosar = KOSAR_LISTA.filter((toy) => toy.id !== id);
-    KOSAR_LISTA.length = 0;
+    const ujKosar = this.#KOSAR.filter((toy) => toy.id !== id);
+    this.#KOSAR.length = 0;
 
     ujKosar.forEach((kosarTargy) => {
-      KOSAR_LISTA.push(kosarTargy);
+      this.#KOSAR.push(kosarTargy);
     });
   };
 
   kosarCsokkent = (id) => {
-    const index = KOSAR_LISTA.findIndex((toy) => toy.id === id);
+    const index = this.#KOSAR.findIndex((toy) => toy.id === id);
 
-    if (KOSAR_LISTA[index].amount > 1) {
-      KOSAR_LISTA[index].amount--;
+    if (this.#KOSAR[index].amount > 1) {
+      this.#KOSAR[index].amount--;
     } else {
       this.kosarbolTorol(id);
     }
