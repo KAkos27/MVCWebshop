@@ -2,7 +2,7 @@ export const TOYS = [
   {
     id: "t0",
     image: {
-      src: "../kepek/t0.jpg",
+      src: "kepek/t0.jpg",
       alt: "TIAKI Flip-Flop kutyajáték",
     },
     title: "TIAKI Flip-Flop kutyajáték",
