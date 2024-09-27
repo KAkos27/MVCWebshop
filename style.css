@@ -1,11 +1,11 @@
 .badge {
   cursor: pointer;
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-@media only screen and (max-width: 991px) {
+@media (max-width: 991px) {
   .ures-kosar {
     position: inherit !important;
     left: auto !important;
