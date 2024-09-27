@@ -40,6 +40,10 @@ class Model {
     });
   };
 
+  adminUjTermek = (termek) => {
+    this.#JATEKOK.push(termek);
+  };
+
   kosarCsokkent = (id) => {
     const index = this.#KOSAR.findIndex((toy) => toy.id === id);
 

@@ -1,13 +1,8 @@
 export const AMDIN_HTML_STRING = `
 <div class="admin-valtozo">
-          <div class="container-fluid py-3 px-5 mb-3 bg-white border-bottom">
-            <div class="row m-0 d-flex align-items-center">
-              <h2 class="col-6 col-md-4 display-3 px-5">Admin</h2>
-            </div>
-          </div>
           <div
             id="admin-form"
-            class="container bg-white border py-3 mx-3 mx-auto"
+            class="container bg-white border py-3 mx-3 mx-auto mt-5"
             style="width: 40%"
           >
             <h2 class="display-6 border-bottom mb-3 px-2">Adatok</h2>
