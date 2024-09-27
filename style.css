@@ -12,4 +12,12 @@
     top: auto !important;
     padding-bottom: 2rem;
   }
+
+  #admin-tablazat {
+    width: 100% !important;
+  }
+
+  #admin-form {
+    width: 100% !important;
+  }
 }
