@@ -15,7 +15,7 @@ export const TOYS = [
   {
     id: "t1",
     image: {
-      src: "../kepek/t1.jpg",
+      src: "kepek/t1.jpg",
       alt: "Nomad Tales Spirit úszó dummy",
     },
     title: "Nomad Tales Spirit úszó dummy",
@@ -28,7 +28,7 @@ export const TOYS = [
   {
     id: "t2",
     image: {
-      src: "../kepek/t2.jpg",
+      src: "kepek/t2.jpg",
       alt: "Nomad Tales Bloom snack labda",
     },
     title: "Nomad Tales Bloom snack labda",
@@ -41,7 +41,7 @@ export const TOYS = [
   {
     id: "t3",
     image: {
-      src: "../kepek/t3.jpg",
+      src: "kepek/t3.jpg",
       alt: "TIAKI bacon ízű rágócsont",
     },
     title: "TIAKI bacon ízű rágócsont",
@@ -53,7 +53,7 @@ export const TOYS = [
   },
   {
     id: "t4",
-    image: { src: "../kepek/t4.jpg", alt: "TPR-csont kötéllel" },
+    image: { src: "kepek/t4.jpg", alt: "TPR-csont kötéllel" },
     title: "TPR-csont kötéllel",
     description:
       "Kötél kölyköknek és kisebb kutyáknak, dobálásra és apportírozásra. A csomózott kötél közepén csonttal, noppjai rágásra ösztönöznek és stimulálják a fogínyt. Poliészterből és termoplasztikus gumiból.",
@@ -64,7 +64,7 @@ export const TOYS = [
   {
     id: "t5",
     image: {
-      src: "../kepek/t5.jpg",
+      src: "kepek/t5.jpg",
       alt: "Nomad Tales Bloom labdahajító",
     },
     title: "Nomad Tales Bloom labdahajító",
@@ -77,7 +77,7 @@ export const TOYS = [
   {
     id: "t6",
     image: {
-      src: "../kepek/t6.jpg",
+      src: "kepek/t6.jpg",
       alt: "Habzsolás elleni acél etetőtál",
     },
     title: "Habzsolás elleni acél etetőtál",
@@ -90,7 +90,7 @@ export const TOYS = [
   {
     id: "t7",
     image: {
-      src: "../kepek/t7.jpg",
+      src: "kepek/t7.jpg",
       alt: "Modern Living Brasilia tányér",
     },
     title: "Modern Living Brasilia tányér",
