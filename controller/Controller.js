@@ -1,11 +1,13 @@
 import Model from "../model/Model.js";
 import { TOYS } from "../model/data.js";
 import { KOSAR_LISTA } from "../model/kosarLista.js";
+import Admin from "../view/Admin.js";
 import Kosar from "../view/Kosar.js";
 import Tartalom from "../view/Tartalom.js";
 
 export default class Controller {
   #TARTALOM;
+  #TARTALOM_PELDANY;
   #KOSAR;
   #MODEL;
   #ADMIN_LINK;
@@ -20,12 +22,13 @@ export default class Controller {
   initController = () => {
     this.#MODEL = new Model();
     this.#TARTALOM = $(".tartalom");
-    this.#KOSAR = $(".kosar");
     this.#ADMIN_LINK = $(".adminOldal");
     this.#TERMEKEK_LINK = $(".termekOldal");
     this.#FOOLDAL = $(".foOldal");
 
-    new Tartalom(this.#TARTALOM, TOYS);
+    new Tartalom(this.#TARTALOM, this.#TARTALOM, TOYS);
+
+    this.#KOSAR = $(".kosar");
     new Kosar(this.#KOSAR, KOSAR_LISTA);
   };
 
@@ -48,18 +51,13 @@ export default class Controller {
 
   adminOldalKlikk() {
     this.#ADMIN_LINK.on("click", () => {
-      this.#FOOLDAL.html("Admin");
+      new Admin(this.#FOOLDAL);
     });
   }
 
   termekOldalKlikk() {
     this.#TERMEKEK_LINK.on("click", () => {
-      this.#FOOLDAL.html(
-        `<div class="tartalom row col-lg-7 col-12"></div>
-        <div class="col-12 col-lg-5 position-relative border-start border-2">
-          <ul class="kosar list-group list-group pt-3"></ul>
-        </div>`
-      );
+      new Tartalom(this.#FOOLDAL, this.#TARTALOM, TOYS);
       this.initController();
     });
   }
