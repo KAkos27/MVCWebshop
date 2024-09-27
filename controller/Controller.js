@@ -40,6 +40,7 @@ export default class Controller {
 
     this.adminOldalKlikk();
     this.termekOldalKlikk();
+    this.adminTorol();
   };
 
   esemenyKezelo = (esemeny, esemenyEljaras) => {
@@ -61,4 +62,11 @@ export default class Controller {
       this.initController();
     });
   }
+
+  adminTorol = () => {
+    $(window).on("adminTorol", (event) => {
+      this.#MODEL.adminTorol(event.detail);
+      new Admin(this.#FOOLDAL);
+    });
+  };
 }

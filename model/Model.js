@@ -31,6 +31,15 @@ class Model {
     });
   };
 
+  adminTorol = (id) => {
+    const ujLista = this.#JATEKOK.filter((toy) => toy.id !== id);
+    this.#JATEKOK.length = 0;
+
+    ujLista.forEach((listaElem) => {
+      this.#JATEKOK.push(listaElem);
+    });
+  };
+
   kosarCsokkent = (id) => {
     const index = this.#KOSAR.findIndex((toy) => toy.id === id);
 
