@@ -41,6 +41,11 @@ class Model {
   };
 
   adminUjTermek = (termek) => {
+    if (
+      !(termek.title.trim() && termek.description.trim() && termek.price.trim())
+    ) {
+      return;
+    }
     this.#JATEKOK.push(termek);
   };
 
